@@ -3,7 +3,7 @@ service tomcat7 start
 
 # link mounted source directory to opengrok
 ln -s /src $OPENGROK_INSTANCE_BASE/src
-
+svn co --username svc --password gfn svn://gfn-svn:3692/branches/builds/4.0/src/java/AMAPI
 
 # first-time index
 echo "** Running first-time indexing"
